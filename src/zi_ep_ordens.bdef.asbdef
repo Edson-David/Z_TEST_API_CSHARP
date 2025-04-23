@@ -1,0 +1,21 @@
+unmanaged implementation in class zcl_i_ep_ordens unique;
+strict ( 2 );
+
+define behavior for ZI_EP_ORDENS alias Ordens
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Ordem;
+
+  mapping for ztep_ordens control zsep_ordens
+    {
+      Ordem     = ordem;
+      Maquina   = maquina;
+      Setor     = setor;
+      Descricao = descricao;
+      Status    = status;
+    }
+}

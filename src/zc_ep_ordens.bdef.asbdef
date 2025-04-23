@@ -1,0 +1,9 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_EP_ORDENS alias Ordens
+{
+  use create;
+  use update;
+  use delete;
+}

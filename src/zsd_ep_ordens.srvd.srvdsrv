@@ -1,0 +1,4 @@
+@EndUserText.label: 'Definição de Serviço Ordens'
+define service ZSD_EP_ORDENS {
+  expose ZC_EP_ORDENS as Ordens;
+}
